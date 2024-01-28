@@ -6,7 +6,7 @@
         "Cms",
         "Umbraco",
         "EarlyAdopter",
-        "Packlage"
+        "Package"
     ],
     "identity": "Umbraco.Community.Templates.EarlyPackage",
     "name": "Umbraco EarlyAdopter's v14 Package Template",
