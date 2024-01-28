@@ -15,8 +15,8 @@
   
     <PackageTags>umbraco</PackageTags>
 
-    <PackageProjectUrl>https://github.com/</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/KevinJump/EarlyAdopters.Umbraco.Templates</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/KevinJump/EarlyAdopters.Umbraco.Templates</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
 
     <PackageLicenceExpression>MIT</PackageLicenceExpression>
