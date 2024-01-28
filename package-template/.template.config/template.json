@@ -1,0 +1,104 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Kevin Jump",
+    "classifications": [
+        "Web",
+        "Cms",
+        "Umbraco",
+        "EarlyAdopter",
+        "Packlage"
+    ],
+    "identity": "Umbraco.Community.Templates.EarlyPackage",
+    "name": "Umbraco EarlyAdopter's v14 Package Template",
+    "shortName": "early.umbracopackage",
+
+    "sourceName": "MyPackage",
+    "defaultName": "MyPackage",
+    "preferNameDirectory": true,
+    "tags": {
+        "language": "c#",
+        "type": "solution"
+    },
+    "sources": [
+        {
+            "exclude": [
+                "**/[Bb]in/**",
+                "**/[Oo]bj/**",
+                ".template.config/**/*",
+                "**.Client/wwwroot/**/*",
+                "**/*.filelist",
+                "**/*.user",
+                "**/*.lock.json",
+                "**/.vs/**",
+                "**/packages/**",
+                "**/node_modules/**",
+                "**/umbraco/**"
+            ]
+        }
+    ],
+    "symbols": {
+        "restore": {
+            "type": "parameter",
+            "datatype": "bool",
+            "defaultValue": "false",
+            "description": "Restore nuget and NPM Modules"
+        },
+        "SiteId": {
+            "type": "generated",
+            "generator": "guid",
+            "replaces": "7e10a8a1-980e-4912-9a82-cef07d089db9",
+            "parameters": { "defaultFormat": "D"}
+        },
+        "sitePort": {
+            "type": "generated",
+            "generator": "port",
+            "replaces": "35282",
+            "parameters": {
+                "fallback": 5000
+            }
+        },
+        "httpsPort": {
+            "type": "generated",
+            "generator": "port",
+            "replaces": "44324",
+            "parameters": {
+                "low": 44300,
+                "high": 44399,
+                "fallback": 5001
+            }
+        },
+        "ConnectionString": {
+            "displayName": "Connection string",
+            "description": "Database connection string used by Umbraco.",
+            "type": "parameter",
+            "datatype": "string",
+            "defaultValue": "",
+            "replaces": "Data Source=|DataDirectory|/Umbraco.sqlite.db;Cache=Shared;Foreign Keys=True;Pooling=True"
+        },
+        "ConnectionStringProviderName": {
+            "displayName": "Connection string provider name",
+            "description": "Database connection string provider name used by Umbraco.",
+            "type": "parameter",
+            "datatype": "string",
+            "defaultValue": "Microsoft.Data.SqlClient",
+            "replaces": "Microsoft.Data.Sqlite"
+        }
+    },
+    "postActions": [
+        {
+            "manualInstructions": [
+                {
+                    "text": "run restore.cmd to restore all the packages"
+                }
+            ],
+            "condition": "restore",
+            "description": "Restore packages",
+            "actionId": "3A7C4B45-1F5D-4A30-959A-51B88E82B5D2",
+            "args": {
+                "redirectStandardOutput": false,
+                "executable": "./.template/restore.cmd",
+                "args": ""
+            }
+        }
+    ]
+}

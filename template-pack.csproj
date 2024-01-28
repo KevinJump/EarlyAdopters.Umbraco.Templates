@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <PackageId>Umbraco.Community.Early.Templates</PackageId>
+
+    <TargetFramework>net8.0</TargetFramework>
+
+    <Title>Early Adopters Umbraco Package Templates</Title>
+    <Description>Templates to use when creating v14 Umbraco packages</Description>
+    <Authors>Kevin Jump</Authors>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+
+    <Copyright>$([System.DateTime]::UtcNow.ToString(`yyyy`)) © </Copyright>
+  
+    <PackageTags>umbraco</PackageTags>
+
+    <PackageProjectUrl>https://github.com/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+
+    <PackageLicenceExpression>MIT</PackageLicenceExpression>
+
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders> 
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="package-template\**\*" 
+             Exclude="**\.vs\**;**\bin\**;**\obj\**;**\.vs\**;**\umbraco\**;**\packages\**;**\node_modules\**;**\*.client\wwwroot\**" />
+    <Compile Remove="**\*" />
+    <None Include="assets\readme.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+</Project>
