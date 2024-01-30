@@ -28,6 +28,9 @@ export class MyPackageDashboard extends UmbElementMixin(LitElement) {
     `
 }
 
+
+export default MyPackageDashboard;
+
 declare global {
     interface HtmlElementTagNameMap {
         'mypackage-dashboard': MyPackageDashboard
