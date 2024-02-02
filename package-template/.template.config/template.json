@@ -11,6 +11,17 @@
     "identity": "Umbraco.Community.Templates.EarlyPackage",
     "name": "Umbraco EarlyAdopter's v14 Package Template",
     "shortName": "early.umbracopackage",
+    "constraints": {
+        "sdk-only": {
+            "type":"host",
+            "args": [
+                {
+                    "hostname": "dotnetcli",
+                    "version": "[8.0.0,)"
+                }
+            ]
+        }
+    },
 
     "sourceName": "MyPackage",
     "defaultName": "MyPackage",
