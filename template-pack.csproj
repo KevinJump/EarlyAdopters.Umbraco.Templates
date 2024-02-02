@@ -30,8 +30,9 @@
 
   <ItemGroup>
     <Content Include="package-template\**\*" 
-             Exclude="**\.vs\**;**\bin\**;**\obj\**;**\.vs\**;**\umbraco\**;**\packages\**;**\node_modules\**;**\*.client\wwwroot\**" />
+             Exclude="**\.vs\**;**\bin\**;**\obj\**;**\.vs\**;**\umbraco\**;**\packages\**;**\node_modules\**;**\*.client\wwwroot\**;**\package-template\.gitignore" />
     <Compile Remove="**\*" />
     <None Include="assets\readme.md" Pack="true" PackagePath="\" />
+    <None Include="assets\.gitignore" Pack="true" PackagePath="\content\package-template\" />
   </ItemGroup>
 </Project>
