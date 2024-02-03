@@ -22,7 +22,6 @@
             ]
         }
     },
-
     "sourceName": "MyPackage",
     "defaultName": "MyPackage",
     "preferNameDirectory": true,
@@ -45,21 +44,18 @@
                 "**/node_modules/**",
                 "**/umbraco/**"
             ]
-        }
+        }        
+    ],
+    "guids": [
+        "7e10a8a1-980e-4912-9a82-cef07d089db9"
     ],
     "symbols": {
         "restore": {
             "type": "parameter",
             "datatype": "bool",
-            "defaultValue": "false",
+            "defaultValue": "true",
             "description": "Restore nuget and NPM Modules"
-        },
-        "SiteId": {
-            "type": "generated",
-            "generator": "guid",
-            "replaces": "7e10a8a1-980e-4912-9a82-cef07d089db9",
-            "parameters": { "defaultFormat": "D"}
-        },
+        },        
         "sitePort": {
             "type": "generated",
             "generator": "port",
@@ -110,6 +106,6 @@
                 "executable": "./.template/restore.cmd",
                 "args": ""
             }
-        }
+        }        
     ]
 }
