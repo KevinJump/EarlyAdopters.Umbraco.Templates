@@ -1,7 +1,7 @@
 @echo off 
 rem move into the assets folder, and restore npm
 
-cd .\MyPackage.Client\Assets
+cd .\MyPackage.1.Client\Assets
 echo -- Restoring NPM Packages
 call npm install -force
 

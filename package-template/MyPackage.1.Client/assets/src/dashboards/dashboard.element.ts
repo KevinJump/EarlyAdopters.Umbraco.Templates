@@ -1,15 +1,15 @@
 import { UmbElementMixin } from "@umbraco-cms/backoffice/element-api";
 import { LitElement, html, css, customElement, property } from "@umbraco-cms/backoffice/external/lit";
 
-@customElement('mypackage-dashboard')
-export class MyPackageDashboard extends UmbElementMixin(LitElement) {
+@customElement('mypackage__1-dashboard')
+export class MyPackage__1Dashboard extends UmbElementMixin(LitElement) {
 
     constructor() {
         super();
     }
 
     @property()
-    title = 'MyPackage dashboard'
+    title = 'MyPackage.1 dashboard'
 
     render() {
         return html`
@@ -28,10 +28,10 @@ export class MyPackageDashboard extends UmbElementMixin(LitElement) {
 }
 
 
-export default MyPackageDashboard;
+export default MyPackage__1Dashboard;
 
 declare global {
     interface HtmlElementTagNameMap {
-        'mypackage-dashboard': MyPackageDashboard
+        'MyPackage.1-dashboard': MyPackage__1Dashboard
     }
 }

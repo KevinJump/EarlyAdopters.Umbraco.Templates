@@ -6,7 +6,7 @@ export default defineConfig({
             entry: "src/index.ts", // your web component source file
             formats: ["es"],
         },
-        outDir: "../wwwroot/App_Plugins/mypackage", 
+        outDir: "../wwwroot/App_Plugins/MyPackage.1", 
         emptyOutDir: true,
         sourcemap: true,
         rollupOptions: {

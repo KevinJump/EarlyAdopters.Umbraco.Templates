@@ -6,7 +6,7 @@ things you need to know.
 
 ## When need to build your assets.
 
-switching to the `MyPackage.Client/assets` folder, you 
+switching to the `MyPackage.1.Client/assets` folder, you 
 can run a command to compile your typescript files
 and put them in the wwwroot folder.
 

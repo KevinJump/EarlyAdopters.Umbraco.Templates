@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPackage", "MyPackage\MyPackage.csproj", "{32D89828-2AD4-410B-B89C-6BDEA3E0E02B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPackage.1", "MyPackage.1\MyPackage.1.csproj", "{32D89828-2AD4-410B-B89C-6BDEA3E0E02B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPackage.Client", "MyPackage.Client\MyPackage.Client.csproj", "{AF13CE01-F5C2-4C76-90FE-9514A5A75C02}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPackage.1.Client", "MyPackage.1.Client\MyPackage.1.Client.csproj", "{AF13CE01-F5C2-4C76-90FE-9514A5A75C02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPackage.Core", "MyPackage.Core\MyPackage.Core.csproj", "{F14B29AE-8464-4B66-B4C0-DFB372FE1317}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPackage.1.Core", "MyPackage.1.Core\MyPackage.1.Core.csproj", "{F14B29AE-8464-4B66-B4C0-DFB372FE1317}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPackage.Website", "MyPackage.Website\MyPackage.Website.csproj", "{CB63276F-B365-4CD1-AB0B-CF3765F1A012}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPackage.1.Website", "MyPackage.1.Website\MyPackage.1.Website.csproj", "{CB63276F-B365-4CD1-AB0B-CF3765F1A012}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

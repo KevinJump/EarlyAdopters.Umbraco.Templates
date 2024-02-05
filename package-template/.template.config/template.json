@@ -22,8 +22,8 @@
             ]
         }
     },
-    "sourceName": "MyPackage",
-    "defaultName": "MyPackage",
+    "sourceName": "MyPackage.1",
+    "defaultName": "MyPackage.1",
     "preferNameDirectory": true,
     "tags": {
         "language": "c#",

@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\MyPackage.Core\MyPackage.Core.csproj" />
-    <ProjectReference Include="..\MyPackage.Client\MyPackage.Client.csproj" />
+    <ProjectReference Include="..\MyPackage.1.Core\MyPackage.1.Core.csproj" />
+    <ProjectReference Include="..\MyPackage.1.Client\MyPackage.1.Client.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
