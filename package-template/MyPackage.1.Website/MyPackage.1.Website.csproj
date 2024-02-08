@@ -6,7 +6,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Umbraco.Cms" Version="14.0.0--preview004" />
+		<PackageReference Include="Umbraco.Cms" Version="14.0.0--preview005" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -36,9 +36,7 @@
 			<PackageSchemaFile Include="umbraco-package-schema.json" />
 		</ItemGroup>
 
-		<Copy
-			SourceFiles="@(PackageSchemaFile)"
-			DestinationFolder="../MyPackage.1.Client/Assets">
+		<Copy SourceFiles="@(PackageSchemaFile)" DestinationFolder="../MyPackage.1.Client/Assets">
 		</Copy>
 
 	</Target>
