@@ -59,7 +59,7 @@
         "sitePort": {
             "type": "generated",
             "generator": "port",
-            "replaces": "35282",
+            "replaces": "8166",
             "parameters": {
                 "fallback": 5000
             }
@@ -67,7 +67,7 @@
         "httpsPort": {
             "type": "generated",
             "generator": "port",
-            "replaces": "44324",
+            "replaces": "44336",
             "parameters": {
                 "low": 44300,
                 "high": 44399,
