@@ -14,6 +14,6 @@ dotnet new install Umbraco.Community.Early.Templates
 ## Create a project 
 
 ```
-dotnet new early-umbracotemplate -n MySuperPackage --restore
+dotnet new early.umbracopackage -n MySuperPackage --restore
 ```
 
